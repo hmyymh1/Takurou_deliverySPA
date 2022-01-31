@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "851MkPOP";
+        font-weight: 400;
+        src: url(./851MkPOP_100.ttf);
+    }
+
+    .font-MkPOP {
+        font-family: "851MkPOP"
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(transparent,grey);
+        border-radius: 4px;
+    }
+
+    * {
+        scroll-behavior: smooth;
+        vertical-align: baseline;
+    }
+
+    body {
+        width: 100vw;
+        max-width:100%;
+        overflow-x: hidden;
+        overflow-y: overlay;
+    }
+    
+    #address_add_table {
+        border-spacing: 1rem 1rem;
+    }
+}
